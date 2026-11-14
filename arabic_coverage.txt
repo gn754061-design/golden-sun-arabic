@@ -1,0 +1,14 @@
+Basic Arabic map: 84 characters
+Code range: 32 - 246
+
+Loaded 453 translations
+Total unique characters in translations: 61
+Missing from basic map: 8
+  U+0045 ('E')
+  U+0640 ('ـ')
+  U+064B ('ً')
+  U+064D ('ٍ')
+  U+064E ('َ')
+  U+064F ('ُ')
+  U+0650 ('ِ')
+  U+0651 ('ّ')
