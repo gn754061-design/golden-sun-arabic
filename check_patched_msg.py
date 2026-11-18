@@ -1,6 +1,6 @@
 import struct
 
-with open(r'C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba', 'rb') as f:
+with open("./work/"MLSS_EU_AR.gba', 'rb') as f:
     rom = f.read()
 
 STORY_TBL = 0x004EA268

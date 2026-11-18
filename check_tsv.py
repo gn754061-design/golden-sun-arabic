@@ -2,7 +2,7 @@ import csv
 
 # Load translations and check the actual story text content
 translations = {}
-with open(r"C:\Users\user\Desktop\game\Games\game\arabic_translation_merged.tsv", 'r', encoding='utf-8') as f:
+with open("./"Games\game\arabic_translation_merged.tsv", 'r', encoding='utf-8') as f:
     reader = csv.reader(f, delimiter='\t')
     next(reader)
     for row in reader:
@@ -17,7 +17,7 @@ with open(r"C:\Users\user\Desktop\game\Games\game\arabic_translation_merged.tsv"
 # Print translations for indices around the story range we found (244, 253, 262, etc.)
 story_indices = [244, 253, 262, 273, 283, 297, 298, 299, 300, 303, 304, 305, 306, 308, 309, 310, 311, 312, 313, 341, 342, 343, 344, 347, 350, 353]
 
-with open(r"C:\Users\user\Desktop\game\tsv_check.txt", 'w', encoding='utf-8') as out:
+with open("./"tsv_check.txt", 'w', encoding='utf-8') as out:
     out.write('Translations for story indices:\n')
     for idx in story_indices:
         if idx in translations:

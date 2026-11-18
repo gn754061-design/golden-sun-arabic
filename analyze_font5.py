@@ -13,7 +13,7 @@ except ImportError:
     print("Capstone not installed")
     sys.exit(1)
 
-ROM_PATH = Path(r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba")
+ROM_PATH = Path("./work/"MLSS_EU.gba")
 WIDTH_TABLE_ADDR = 0x089418F0
 FONT_TILES_ADDR = 0x08947538
 STORY_TABLE_ADDR = 0x084EA268

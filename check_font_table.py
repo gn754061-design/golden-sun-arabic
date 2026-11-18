@@ -1,4 +1,4 @@
-with open(r'C:\Users\user\Desktop\game\build_complete_arabic_v3.py', 'r', encoding='utf-8') as f:
+with open("./"build_complete_arabic_v3.py', 'r', encoding='utf-8') as f:
     text = f.read()
 
 idx = text.find('FONT_OFFSETS')

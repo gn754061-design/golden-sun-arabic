@@ -1,6 +1,6 @@
 import struct
 
-with open(r'C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba', 'rb') as f:
+with open("./work/"MLSS_EU.gba', 'rb') as f:
     clean_rom = f.read()
 
 TABLE_ADDR = 0x004EA268

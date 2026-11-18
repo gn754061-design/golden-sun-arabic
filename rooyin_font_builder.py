@@ -9,8 +9,8 @@ import json
 import re
 from PIL import Image, ImageDraw
 
-ROOYIN_TXT = 'C:/Users/user/Desktop/game/Golden Sun_جميع الملفات/Games/game/GS_Arabic_Final/fonts/rooyin_render.txt'
-LABELS_JSON = 'C:/Users/user/Desktop/game/Golden Sun_جميع الملفات/Games/game/GS_Arabic_Final/fonts/render_labels.json'
+ROOYIN_TXT = "./fonts/"rooyin_render.txt'
+LABELS_JSON = "./fonts/"render_labels.json'
 
 def load_rooyin_renders():
     with open(LABELS_JSON, 'r', encoding='utf-8') as f:

@@ -74,7 +74,7 @@ for ch in sample:
 # Load translations and check coverage
 import csv
 translations = {}
-with open(r"C:\Users\user\Desktop\game\Games\game\arabic_translation_merged.tsv", 'r', encoding='utf-8') as f:
+with open("./"Games\game\arabic_translation_merged.tsv", 'r', encoding='utf-8') as f:
     reader = csv.reader(f, delimiter='\t')
     next(reader)
     for row in reader:

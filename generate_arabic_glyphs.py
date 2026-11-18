@@ -139,7 +139,7 @@ for code in range(0xF8, 0x100):
         glyphs[code] = bytes(tile)
 
 # Save to binary file
-with open(r'C:\Users\user\Desktop\game\arabic_font_tiles.bin', 'wb') as f:
+with open("./"arabic_font_tiles.bin', 'wb') as f:
     for code in range(0xA0, 0x100):
         f.write(glyphs[code])
 
@@ -170,5 +170,5 @@ for idx, (char, code) in enumerate(arabic_chars):
     draw = ImageDraw.Draw(preview)
     draw.text((x, y), char, fill=15, font=font)
 
-preview.save(r'C:\Users\user\Desktop\game\arabic_font_preview.png')
+preview.save("./"arabic_font_preview.png')
 print("Saved preview to arabic_font_preview.png")

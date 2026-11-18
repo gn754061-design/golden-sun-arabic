@@ -8,7 +8,7 @@ and normalizes Nintendo terminology.
 
 import json
 
-STORY_PATH = r"C:\Users\user\Desktop\game\all_story_arabic.json"
+STORY_PATH = "./"all_story_arabic.json"
 
 fixes = {
     '152': 'أهلاً بكما يا أصحاب الشوارب! أنتما على وشك دخول مملكة +بينبين+، لذا هل جوازات سفركما معكما؟ لنلقِ نظرة... أوه نعم، ها هي! يبدو أن لديكما حقيبة هناك... حسناً، اضغط على زر [SELECT] لفتح حقيبتكما، اتفقنا؟',

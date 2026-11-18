@@ -32,10 +32,10 @@ from patch_menu_graphics import patch_resource_6, patch_resource_0x26
 from patch_resource_7 import patch_resource_7_data
 from patch_title_screen import build_localized_sheet_5, patch_title_animation_frames
 
-CLEAN_ROM_PATH = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba"
-OUTPUT_ROM_PATH = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba"
-STORY_AR_PATH = r"C:\Users\user\Desktop\game\all_story_arabic.json"
-BPS_PATCH_PATH = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.bps"
+CLEAN_ROM_PATH = "./work/"MLSS_EU.gba"
+OUTPUT_ROM_PATH = "./work/"MLSS_EU_AR.gba"
+STORY_AR_PATH = "./"all_story_arabic.json"
+BPS_PATCH_PATH = "./work/"MLSS_EU_AR.bps"
 
 # Font base offsets in ROM
 FONT_OFFSETS = [0x0051C9E8, 0x0051E26C, 0x0051FAF0]
@@ -444,7 +444,7 @@ def main():
         story_ar = json.load(f)
 
     # Read original English dialogues to keep box headers (spiky vs normal)
-    with open(r"C:\Users\user\Desktop\game\all_story_english.json", 'r', encoding='utf-8') as f:
+    with open("./"all_story_english.json", 'r', encoding='utf-8') as f:
         story_en = json.load(f)
 
     injected_story_count = 0
@@ -548,7 +548,7 @@ def main():
     with open(BPS_PATCH_PATH, 'wb') as f:
         f.write(bps_data)
     # Also write to root game directory
-    alt_bps = r"C:\Users\user\Desktop\game\MLSS_EU_AR.bps"
+    alt_bps = "./"MLSS_EU_AR.bps"
     with open(alt_bps, 'wb') as f:
         f.write(bps_data)
 

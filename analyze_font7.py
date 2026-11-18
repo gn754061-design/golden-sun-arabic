@@ -14,7 +14,7 @@ except ImportError:
     print("Capstone not installed")
     sys.exit(1)
 
-ROM_PATH = Path(r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba")
+ROM_PATH = Path("./work/"MLSS_EU.gba")
 
 def read_rom():
     with open(ROM_PATH, 'rb') as f:

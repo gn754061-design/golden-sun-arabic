@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-ROM_PATH = Path(r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba")
+ROM_PATH = Path("./work/"MLSS_EU.gba")
 FONT_TILES_ADDR = 0x00947538
 WIDTH_TABLE_ADDR = 0x009418F0
 STORY_BLOCK_220 = 0x003EBB04  # "I must find Mario immediately!" location

@@ -214,14 +214,14 @@ if __name__ == '__main__':
     img = render_codes_to_image(all_line_codes, line_spacing=16)
 
     # Save 1:1 and 4x scaled
-    out_1x = 'C:/Users/user/Desktop/game/rooyin_test_preview_1x.png'
-    out_4x = 'C:/Users/user/Desktop/game/rooyin_test_preview_4x.png'
+    out_1x = "./"rooyin_test_preview_1x.png'
+    out_4x = "./"rooyin_test_preview_4x.png'
     img.save(out_1x)
 
     img_4x = img.resize((img.width * 4, img.height * 4), Image.NEAREST)
     img_4x.save(out_4x)
 
     # Copy to artifact directory for presentation
-    art_path = 'C:/Users/user/.gemini/antigravity/brain/bb742f28-9080-409b-82bd-6fe93eab7c66/rooyin_test_preview_4x.png'
+    art_path = "./preview.png"
     img_4x.save(art_path)
     print(f'Saved preview image to {out_4x} and {art_path}')

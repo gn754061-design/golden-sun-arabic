@@ -15,9 +15,9 @@ import shutil
 # ============================================================
 # CONSTANTS
 # ============================================================
-SRC_ROM = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba"
-DST_ROM = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba"
-TRANSLATION_TSV = r"C:\Users\user\Desktop\game\Games\game\arabic_translation_merged.tsv"
+SRC_ROM = "./work/"MLSS_EU.gba"
+DST_ROM = "./work/"MLSS_EU_AR.gba"
+TRANSLATION_TSV = "./"Games\game\arabic_translation_merged.tsv"
 
 FONT_TILES_ADDR = 0x00947538
 WIDTH_TABLE_ADDR = 0x009418F0

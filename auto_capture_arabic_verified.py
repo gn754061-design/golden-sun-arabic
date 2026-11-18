@@ -15,9 +15,9 @@ K_A = ord('J')
 K_S = ord('S')
 K_X = ord('X')
 
-SHOTS_DIR = r'C:\Users\user\Desktop\game\MLSS_AR\work\mgba_shots'
-QA_DIR = r'C:\Users\user\Desktop\game\MLSS_AR\work\qa_verified_new_font'
-ROM_PATH = r'C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba'
+SHOTS_DIR = "./work/"mgba_shots'
+QA_DIR = "./work/"qa_verified_new_font'
+ROM_PATH = "./work/"MLSS_EU_AR.gba'
 MGBA_PATH = r'C:\Program Files\mGBA\mGBA.exe'
 
 os.makedirs(SHOTS_DIR, exist_ok=True)

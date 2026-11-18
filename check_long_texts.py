@@ -1,7 +1,7 @@
 import csv
 
 translations = {}
-with open(r"C:\Users\user\Desktop\game\Games\game\arabic_translation_merged.tsv", 'r', encoding='utf-8') as f:
+with open("./"Games\game\arabic_translation_merged.tsv", 'r', encoding='utf-8') as f:
     reader = csv.reader(f, delimiter='\t')
     next(reader)
     for row in reader:
@@ -12,7 +12,7 @@ with open(r"C:\Users\user\Desktop\game\Games\game\arabic_translation_merged.tsv"
             except:
                 pass
 
-with open(r"C:\Users\user\Desktop\game\long_texts.txt", 'w', encoding='utf-8') as out:
+with open("./"long_texts.txt", 'w', encoding='utf-8') as out:
     out.write('Indices with text length > 30:\n')
     for idx in sorted(translations.keys()):
         text = translations[idx]

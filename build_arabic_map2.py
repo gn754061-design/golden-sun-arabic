@@ -64,7 +64,7 @@ basic_arabic_map['\u06D4'] = 0xF6
 # Write results to file instead of printing
 import csv
 translations = {}
-with open(r"C:\Users\user\Desktop\game\Games\game\arabic_translation_merged.tsv", 'r', encoding='utf-8') as f:
+with open("./"Games\game\arabic_translation_merged.tsv", 'r', encoding='utf-8') as f:
     reader = csv.reader(f, delimiter='\t')
     next(reader)
     for row in reader:
@@ -84,7 +84,7 @@ for text in translations.values():
 
 missing = [ch for ch in all_chars if ch not in basic_arabic_map]
 
-with open(r"C:\Users\user\Desktop\game\arabic_coverage.txt", 'w', encoding='utf-8') as f:
+with open("./"arabic_coverage.txt", 'w', encoding='utf-8') as f:
     f.write("Basic Arabic map: {} characters\n".format(len(basic_arabic_map)))
     f.write("Code range: {} - {}\n".format(min(basic_arabic_map.values()), max(basic_arabic_map.values())))
     f.write("\nLoaded {} translations\n".format(len(translations)))
@@ -97,7 +97,7 @@ with open(r"C:\Users\user\Desktop\game\arabic_coverage.txt", 'w', encoding='utf-
 
 # Also test sample conversion
 sample = "\u0623\u062E\u0628\u0631\u0646\u064A \u0628\u0627\u0633\u0645\u0643.{02}"
-with open(r"C:\Users\user\Desktop\game\sample_conversion.txt", 'w', encoding='utf-8') as f:
+with open("./"sample_conversion.txt", 'w', encoding='utf-8') as f:
     f.write("Sample: {}\n".format(sample))
     for ch in sample:
         code = basic_arabic_map.get(ch, 0x20)

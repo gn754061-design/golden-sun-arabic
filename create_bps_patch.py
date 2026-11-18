@@ -11,9 +11,9 @@ import struct
 import hashlib
 import time
 
-SRC_PATH = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba"
-DST_PATH = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba"
-PATCH_OUTPUT = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.bps"
+SRC_PATH = "./work/"MLSS_EU.gba"
+DST_PATH = "./work/"MLSS_EU_AR.gba"
+PATCH_OUTPUT = "./work/"MLSS_EU_AR.bps"
 
 def write_vli(val: int) -> bytes:
     out = bytearray()
@@ -205,7 +205,7 @@ def main():
     print(f"  Saved patch to: {PATCH_OUTPUT}")
     
     # Also write a copy to the root game directory
-    alt_output = r"C:\Users\user\Desktop\game\MLSS_EU_AR.bps"
+    alt_output = "./"MLSS_EU_AR.bps"
     with open(alt_output, 'wb') as f:
         f.write(patch)
     print(f"  Saved copy to: {alt_output}")

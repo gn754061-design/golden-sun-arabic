@@ -20,10 +20,10 @@ VK_DOWN = 0x28
 K_J = ord('J')
 K_S = ord('S')
 
-SHOTS_DIR = r'C:\Users\user\Desktop\game\MLSS_AR\work\mgba_shots'
-QA_DIR = r'C:\Users\user\Desktop\game\MLSS_AR\work\qa_v3'
-ART_DIR = r'C:\Users\user\.gemini\antigravity\brain\bb742f28-9080-409b-82bd-6fe93eab7c66'
-ROM_PATH = r'C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba'
+SHOTS_DIR = "./work/"mgba_shots'
+QA_DIR = "./work/"qa_v3'
+ART_DIR = "./".gemini\antigravity\brain\bb742f28-9080-409b-82bd-6fe93eab7c66'
+ROM_PATH = "./work/"MLSS_EU_AR.gba'
 MGBA_PATH = r'C:\Program Files\mGBA\mGBA.exe'
 
 os.makedirs(SHOTS_DIR, exist_ok=True)

@@ -12,9 +12,9 @@ import ctypes
 from ctypes import wintypes
 from PIL import Image
 
-ROM_PATH = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba"
+ROM_PATH = "./work/"MLSS_EU_AR.gba"
 MGBA_PATH = r"C:\Program Files\mGBA\mGBA.exe"
-OUTPUT_DIR = r"C:\Users\user\Desktop\game\MLSS_AR\work\qa_screens"
+OUTPUT_DIR = "./work/"qa_screens"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 

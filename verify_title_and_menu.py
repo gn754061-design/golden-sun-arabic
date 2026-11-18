@@ -24,9 +24,9 @@ VK_KEY_X = 0x58    # Button A ('X')
 VK_KEY_Z = 0x5A    # Button B ('Z')
 VK_TAB = 0x09      # Fast-Forward toggle
 
-SHOTS_DIR = r'C:\Users\user\Desktop\game\MLSS_AR\work\mgba_shots'
-OUTPUT_DIR = r'C:\Users\user\Desktop\game\MLSS_AR\work\final_verified_v3'
-ART_DIR = r'C:\Users\user\.gemini\antigravity\brain\bb742f28-9080-409b-82bd-6fe93eab7c66'
+SHOTS_DIR = "./work/"mgba_shots'
+OUTPUT_DIR = "./work/"final_verified_v3'
+ART_DIR = "./".gemini\antigravity\brain\bb742f28-9080-409b-82bd-6fe93eab7c66'
 
 os.makedirs(SHOTS_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -34,7 +34,7 @@ for p in glob.glob(os.path.join(SHOTS_DIR, '*.png')):
     try: os.remove(p)
     except: pass
 
-ROM_PATH = r'C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba'
+ROM_PATH = "./work/"MLSS_EU_AR.gba'
 MGBA_PATH = r'C:\Program Files\mGBA\mGBA.exe'
 
 print("Launching mGBA with Patched Arabic ROM v3.0...")

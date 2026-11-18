@@ -102,7 +102,7 @@ for code in range(0xA0, 0x100):
         print(f"  0x{code:02X}: only {non_zero}/32 non-zero bytes")
 
 # Save
-with open(r'C:\Users\user\Desktop\game\arabic_font_tiles.bin', 'wb') as f:
+with open("./"arabic_font_tiles.bin', 'wb') as f:
     for code in range(0xA0, 0x100):
         f.write(glyphs[code])
 
@@ -117,5 +117,5 @@ for idx, (char, code) in enumerate(arabic_chars):
     x = (idx % 16) * 8
     y = (idx // 16) * 8
     draw.text((x, y), char, fill=255, font=font)
-preview.save(r'C:\Users\user\Desktop\game\arabic_font_preview.png')
+preview.save("./"arabic_font_preview.png')
 print("Saved preview")

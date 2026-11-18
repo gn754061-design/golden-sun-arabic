@@ -1,9 +1,9 @@
 import json
 
-with open(r'C:\Users\user\Desktop\game\all_story_english.json', 'r', encoding='utf-8') as f:
+with open("./"all_story_english.json', 'r', encoding='utf-8') as f:
     en = json.load(f)
 
-with open(r'C:\Users\user\Desktop\game\all_story_arabic.json', 'r', encoding='utf-8') as f:
+with open("./"all_story_arabic.json', 'r', encoding='utf-8') as f:
     ar = json.load(f)
 
 for i in range(30):

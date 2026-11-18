@@ -1,4 +1,4 @@
-with open(r'C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba', 'rb') as f:
+with open("./work/"MLSS_EU_AR.gba', 'rb') as f:
     header = f.read(0xC0)
 
 print('=== ROM HEADER ===')
@@ -19,7 +19,7 @@ entry = header[0x00:0x04]
 print('Entry point (ARM):', entry.hex())
 
 # Also check original ROM
-with open(r'C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba', 'rb') as f:
+with open("./work/"MLSS_EU.gba', 'rb') as f:
     orig_header = f.read(0xC0)
 
 print()

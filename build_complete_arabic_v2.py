@@ -27,9 +27,9 @@ from PIL import Image, ImageDraw, ImageFont
 import arabic_reshaper
 from bidi.algorithm import get_display
 
-SRC_ROM = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba"
-DST_ROM = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba"
-FONT_TTF = r"C:\Users\user\Desktop\Golden Sun_모든 الملفات\Games\game\GS_Arabic_Fresh\fonts\RooyinFree-RegularDots2.ttf"
+SRC_ROM = "./work/"MLSS_EU.gba"
+DST_ROM = "./work/"MLSS_EU_AR.gba"
+FONT_TTF = "./fonts/"RooyinFree-RegularDots2.ttf"
 
 FONT_OFFSETS = [
     0x51C9E8,  # Font 0: Dialogue & Menu Font
@@ -374,7 +374,7 @@ def main():
     print("=" * 60)
     
     # 1. Load Story Dialogues from reinject_with_glyphs
-    sys.path.append(r"C:\Users\user\Desktop\game")
+    sys.path.append("./"")
     from reinject_with_glyphs import ARABIC_STORY
     
     # Get assets
@@ -385,7 +385,7 @@ def main():
     story_all.update(system_menus_ar)
     
     # Load any additional translated entries from all_story_arabic.json
-    all_story_json = r"C:\Users\user\Desktop\game\all_story_arabic.json"
+    all_story_json = "./"all_story_arabic.json"
     if os.path.exists(all_story_json):
         try:
             with open(all_story_json, 'r', encoding='utf-8') as f:

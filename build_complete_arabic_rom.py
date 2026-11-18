@@ -17,8 +17,8 @@ from PIL import Image, ImageDraw, ImageFont
 import arabic_reshaper
 from bidi.algorithm import get_display
 
-SRC_ROM = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba"
-DST_ROM = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba"
+SRC_ROM = "./work/"MLSS_EU.gba"
+DST_ROM = "./work/"MLSS_EU_AR.gba"
 
 FONT_OFFSETS = [
     0x51C9E8,  # Font 0
@@ -258,7 +258,7 @@ def main():
     print("=" * 60)
     
     # 1. Load Arabic dialogues
-    sys.path.append(r"C:\Users\user\Desktop\game")
+    sys.path.append("./"")
     from reinject_with_glyphs import ARABIC_STORY
     
     # Add/Update Intro Dialogues (Opening Cutscene at Peach's Castle)

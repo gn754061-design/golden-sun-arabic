@@ -1,9 +1,9 @@
 import struct, json
 
-with open(r'C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba', 'rb') as f:
+with open("./work/"MLSS_EU.gba', 'rb') as f:
     clean_rom = f.read()
 
-with open(r'C:\Users\user\Desktop\game\all_story_english.json', 'r', encoding='utf-8') as f:
+with open("./"all_story_english.json', 'r', encoding='utf-8') as f:
     story_en = json.load(f)
 
 STORY_TBL = 0x004EA268

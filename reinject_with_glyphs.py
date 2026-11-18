@@ -6,9 +6,9 @@ Complete re-injection with proper Arabic glyphs
 import struct
 import shutil
 
-SRC_ROM = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU.gba"
-DST_ROM = r"C:\Users\user\Desktop\game\MLSS_AR\work\MLSS_EU_AR.gba"
-FONT_BIN = r"C:\Users\user\Desktop\game\arabic_font_tiles.bin"
+SRC_ROM = "./work/"MLSS_EU.gba"
+DST_ROM = "./work/"MLSS_EU_AR.gba"
+FONT_BIN = "./"arabic_font_tiles.bin"
 
 FONT_TILES_ADDR = 0x00947538
 WIDTH_TABLE_ADDR = 0x009418F0
